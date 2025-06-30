@@ -63,7 +63,7 @@ This will send a prompt to the LLM asking it to summarize the meeting and genera
 ```
 meeting_summary/
 ├── main.py                # FastAPI entry point
-├── client.py              # LangChain + OpenAI client with tool calling
+├── client.py              # OpenAI client with tool calling
 ├── tools/                 # MCP-compatible tools (e.g., generate_summary)
 ├── requirements.txt
 ├── .env                   # Your local environment config
