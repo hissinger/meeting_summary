@@ -1,6 +1,6 @@
-# Meeting Summary Service Example
+# 🧠 MCP-Based Meeting Summary Service Example
 
-This project is an AI-powered meeting summarization service using FastAPI and PostgreSQL. It supports generating summaries, extracting keywords, and identifying action items from transcribed meeting data via MCP-compatible tools.
+This project is a sample implementation of an AI-powered meeting summarization service using **MCP (Model Context Protocol)**. Built with FastAPI and PostgreSQL, it demonstrates how to define and invoke MCP-compatible tools to generate summaries, extract keywords, and identify action items from transcribed meeting data.
 
 ## 🚀 Features
 
