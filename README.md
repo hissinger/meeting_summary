@@ -1,6 +1,6 @@
 # 🧠 MCP-Based Meeting Summary Service Example
 
-This project is a sample implementation of an AI-powered meeting summarization service using **MCP (Model Context Protocol)**. Built with FastAPI and PostgreSQL, it demonstrates how to define and invoke MCP-compatible tools to generate summaries, extract keywords, and identify action items from transcribed meeting data.
+This project is a sample implementation of an AI-powered meeting summarization service using **MCP (Model Context Protocol)**. Built with FastAPI, LangChain and PostgreSQL, it demonstrates how to define and invoke MCP-compatible tools to generate summaries, extract keywords, and identify action items from transcribed meeting data.
 
 ## 🚀 Features
 
@@ -9,6 +9,7 @@ This project is a sample implementation of an AI-powered meeting summarization s
 - Modular MCP (Model Context Protocol) architecture
 - REST API server with FastAPI
 - PostgreSQL for storing transcripts
+- LangChain for LLM interactions
 
 ---
 
@@ -52,7 +53,7 @@ uvicorn mcp_server:app --reload
 ```
 
 ## 🧪 Test Client
-To test the full MCP tool pipeline using OpenAI function calling:
+To test the full MCP tool pipeline using LangChain function calling:
 ```bash
 python3 client.py
 ```
@@ -63,7 +64,7 @@ This will send a prompt to the LLM asking it to summarize the meeting and genera
 ```
 meeting_summary/
 ├── mcp_server.py          # FastAPI entry point
-├── client.py              # OpenAI client with tool calling
+├── client.py              # LangChain client with tool calling
 ├── tools/                 # MCP-compatible tools (e.g., generate_summary)
 ├── requirements.txt
 ├── .env                   # Your local environment config
