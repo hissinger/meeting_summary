@@ -69,4 +69,5 @@ meeting_summary/
 ├── requirements.txt
 ├── .env                   # Your local environment config
 ├── docker-compose.yml     # PostgreSQL setup
+├── init.sql/              # SQL initialization script
 ```
