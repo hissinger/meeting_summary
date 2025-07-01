@@ -13,7 +13,7 @@ def generate_summary(transcript: list[dict]) -> dict:
     )
 
     response = client.chat.completions.create(
-        model="gpt-4-turbo",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": "너는 회의 요약 도우미야."},
             {"role": "user", "content": prompt}
